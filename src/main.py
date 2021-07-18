@@ -3,7 +3,6 @@ from src.lib.BeatModel import BeatModel
 
 
 def main():
-    print("hello")
     model = BeatModel()
     controller = BeatController(model)
 

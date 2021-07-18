@@ -16,6 +16,7 @@ class DJView(BeatObserver, BPMObserver):
         self.bpm_string = tk.StringVar()
         self.bpm_string.set(CURRENT_BPM + str(self.__current_BPM))
         self.bpm_input = tk.StringVar()
+        # modelをObserverに登録する
         self.__model.registerBeatObserver(self)
         self.__model.registerBPMObserver(self)
 
